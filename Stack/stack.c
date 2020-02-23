@@ -4,7 +4,7 @@
 #define TRUE 1
 #define FALSE 0
 #define MAX_SIZE 5
-#define EMPTY_STACK -1
+#define MIN_SIZE 0
 #define SUCCESS 1
 #define FAIL 0
 
@@ -62,7 +62,7 @@ int is_full(stack_t* p)
 
 int is_empty(stack_t* p)
 {
-    return (p->top <= EMPTY_STACK) ? TRUE: FALSE;
+    return (p->top < MIN_SIZE) ? TRUE: FALSE;
 }
 
 int push(stack_t* p, int value)
