@@ -1,4 +1,3 @@
-Live Demo
 #include <stdio.h>
 
 #define MAX 20
